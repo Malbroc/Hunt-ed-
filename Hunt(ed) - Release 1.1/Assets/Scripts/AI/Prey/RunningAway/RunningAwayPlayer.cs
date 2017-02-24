@@ -48,7 +48,7 @@ public class RunningAwayPlayer : MonoBehaviour {
 
 	// Positions, navmesh properties, map borders info
 	private Vector3 _targetPoint;
-	private NavMeshAgent agentAI; // NavMeshAgent of the AI
+	private UnityEngine.AI.NavMeshAgent agentAI; // NavMeshAgent of the AI
 	public GameObject _mapCornerMin; // Map corner with minimum x and z
 	public GameObject _mapCornerMax; // Map corner with maximum x and z
 	//private Vector3 _middle;
@@ -134,8 +134,8 @@ public class RunningAwayPlayer : MonoBehaviour {
 		Vector3 runTo = tempoTransform.position + tempoTransform.forward*5;
 
 		// Find a point on NavMesh
-		NavMeshHit hit;
-		NavMesh.SamplePosition (runTo, out hit, 15, NavMesh.AllAreas);
+		UnityEngine.AI.NavMeshHit hit;
+		UnityEngine.AI.NavMesh.SamplePosition (runTo, out hit, 15, UnityEngine.AI.NavMesh.AllAreas);
 		_targetPoint = new Vector3 (
 			Random.Range (hit.position.x - 10, hit.position.x + 10),
 			hit.position.y,
@@ -159,8 +159,8 @@ public class RunningAwayPlayer : MonoBehaviour {
 		Vector3 runTo = tempoTransform.position + tempoTransform.forward*5;
 
 		// Find a point on NavMesh
-		NavMeshHit hit;
-		NavMesh.SamplePosition (runTo, out hit, 5, NavMesh.AllAreas);
+		UnityEngine.AI.NavMeshHit hit;
+		UnityEngine.AI.NavMesh.SamplePosition (runTo, out hit, 5, UnityEngine.AI.NavMesh.AllAreas);
 		_targetPoint = hit.position;
 	}
 
@@ -176,10 +176,10 @@ public class RunningAwayPlayer : MonoBehaviour {
 			0,
 			(_mapCornerMax.transform.position.z + _mapCornerMin.transform.position.z)/2);
 		*/
-		_AI.AddComponent<NavMeshAgent>();
+		_AI.AddComponent<UnityEngine.AI.NavMeshAgent>();
 
 		// Get NavMeshAgent of AI
-		agentAI = _AI.GetComponent<NavMeshAgent>();
+		agentAI = _AI.GetComponent<UnityEngine.AI.NavMeshAgent>();
 		agentAI.speed = ROAM_SPEED;
 
 		// Initialize a random target 

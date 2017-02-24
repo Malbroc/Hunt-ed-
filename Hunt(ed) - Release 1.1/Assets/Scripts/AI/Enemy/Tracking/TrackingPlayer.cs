@@ -49,7 +49,7 @@ public class TrackingPlayer : MonoBehaviour {
 	public GameObject _AI; // AI of the pathfinding
 	public GameObject _DetectionSphere_High; // DetectionSphere of the AI vision
 
-	private NavMeshAgent agentAI; // NavMeshAgent of the AI
+	private UnityEngine.AI.NavMeshAgent agentAI; // NavMeshAgent of the AI
 	private Vector3 targetAI; // target position of AI -- basicBehavior
 	private Vector3 mapLimit; // Limit of the map
 	private Vector3 mapPosition; // Global position of the map
@@ -78,10 +78,10 @@ public class TrackingPlayer : MonoBehaviour {
 	{
 		CurrentState = AIState.Roaming;
 
-		_AI.AddComponent<NavMeshAgent>();
+		_AI.AddComponent<UnityEngine.AI.NavMeshAgent>();
 
 		// Get NavMeshAgent of AI
-		agentAI = _AI.GetComponent<NavMeshAgent>();
+		agentAI = _AI.GetComponent<UnityEngine.AI.NavMeshAgent>();
 
 		agentAI.speed = Roaming_speed;
 

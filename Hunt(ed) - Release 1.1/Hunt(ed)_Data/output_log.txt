@@ -1,0 +1,32 @@
+Initialize engine version: 5.4.2f2 (b7e030c65c9b)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 950M (ID=0x139a)
+    Vendor:   NVIDIA
+    VRAM:     2018 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: D:\Martin\Documents\Unity\Hunt(ed) - Release 1.1\Hunt(ed)_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading D:\Martin\Documents\Unity\Hunt(ed) - Release 1.1\Hunt(ed)_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: D:\Martin\Documents\Unity\Hunt(ed) - Release 1.1\Hunt(ed)_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading D:\Martin\Documents\Unity\Hunt(ed) - Release 1.1\Hunt(ed)_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: D:\Martin\Documents\Unity\Hunt(ed) - Release 1.1\Hunt(ed)_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading D:\Martin\Documents\Unity\Hunt(ed) - Release 1.1\Hunt(ed)_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: D:\Martin\Documents\Unity\Hunt(ed) - Release 1.1\Hunt(ed)_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading D:\Martin\Documents\Unity\Hunt(ed) - Release 1.1\Hunt(ed)_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.044 seconds
+Platform assembly: D:\Martin\Documents\Unity\Hunt(ed) - Release 1.1\Hunt(ed)_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: D:\Martin\Documents\Unity\Hunt(ed) - Release 1.1\Hunt(ed)_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.544511 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 15c4 -> priority: 1 
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.355707 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 628.
+Total: 0.596003 ms (FindLiveObjects: 0.091665 ms CreateObjectMapping: 0.015926 ms MarkObjects: 0.324545 ms  DeleteObjects: 0.162449 ms)
+
